@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Description Generator &ndash; Free Template Builder | TubeRank Tools</title>
+  <meta name="description" content="Build a clear YouTube video description from your title, summary, key points and links. Includes optional timestamp placeholders and hashtags. Free and private.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Tube<span>Rank</span> Tools</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="tag-generator.html">Tags</a>
+      <a href="title-generator.html">Titles</a>
+      <a href="description-generator.html" aria-current="page">Descriptions</a>
+      <a href="keyword-tool.html">Keywords</a>
+      <a href="hashtag-generator.html">Hashtags</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="page-intro">
+    <h1>YouTube Description Generator</h1>
+    <p>A good description tells viewers and YouTube what your video covers. Fill in the details you already know and this tool arranges them into a tidy layout with your summary first, then key points, timestamps, links and a closing line.</p>
+  </section>
+
+  <section class="tool-card" aria-label="Description generator">
+    <form id="desc-form" novalidate>
+      <label for="desc-title">Video title</label>
+      <input id="desc-title" type="text" placeholder="e.g. How to Start Running as a Beginner" autocomplete="off">
+      <label for="desc-about">One-sentence summary</label>
+      <input id="desc-about" type="text" placeholder="e.g. A simple plan for your first month of running, with no gym needed." autocomplete="off">
+      <label for="desc-points">Key points <span class="hint">(optional, one per line)</span></label>
+      <textarea id="desc-points" rows="4" placeholder="Choosing your first shoes&#10;A beginner walk-run schedule&#10;Common injury-prevention habits"></textarea>
+      <label for="desc-channel">Channel name <span class="hint">(optional)</span></label>
+      <input id="desc-channel" type="text" autocomplete="off">
+      <label for="desc-links">Links <span class="hint">(optional, one per line, e.g. "My website: https://example.com")</span></label>
+      <textarea id="desc-links" rows="3"></textarea>
+      <label class="check"><input id="desc-ts" type="checkbox" checked> Add timestamp placeholders</label>
+      <label class="check"><input id="desc-hash" type="checkbox" checked> Add up to 3 hashtags from the title</label>
+      <p class="form-error" role="alert"></p>
+      <button class="btn" type="submit">Generate description</button>
+    </form>
+
+    <div id="desc-result" class="result" hidden>
+      <label for="desc-output">Your description (you can edit it)</label>
+      <textarea id="desc-output" rows="16"></textarea>
+      <p id="desc-count" class="meta" aria-live="polite"></p>
+      <button class="btn btn-outline" type="button" data-copy-target="desc-output" data-status="desc-status">Copy description</button>
+      <span id="desc-status" class="status" role="status"></span>
+      <p class="note">Replace the <strong>[mm:ss]</strong> placeholders with real times. YouTube chapters need the first timestamp at 00:00 and at least three timestamps in order. Delete the timestamp section if you don't want chapters.</p>
+    </div>
+  </section>
+
+  <aside class="ad-slot" aria-label="Advertisement placeholder">
+    <span class="ad-label">Advertisement</span>
+    <div class="ad-box">Optional ad placeholder. Remove it, or add your ad code here later.</div>
+  </aside>
+
+  <section class="section prose">
+    <h2>What makes a useful description</h2>
+    <p>Only the first couple of lines show before viewers click "Show more", so the most important information belongs at the top. Write for people first: explain what the video covers, what they will learn and where to go next. Avoid stuffing in unrelated keywords, as that makes your video look untrustworthy and can break YouTube's spam policies.</p>
+  </section>
+
+  <section class="section faq">
+    <h2>Description generator FAQ</h2>
+    <details><summary>How long can a description be?</summary><p>Up to 5,000 characters. Most descriptions work well at a fraction of that.</p></details>
+    <details><summary>Does the tool write the summary for me?</summary><p>No. It uses the sentence you provide, so the description stays accurate and sounds like you.</p></details>
+    <details><summary>Where do I paste the description?</summary><p>In YouTube Studio, open your video's Details page and paste into the Description box.</p></details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year">2026</span> TubeRank Tools. Independent project, not affiliated with YouTube or Google.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

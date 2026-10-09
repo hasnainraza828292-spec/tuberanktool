@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free YouTube Tag Generator &ndash; Comma-Separated Tags | TubeRank Tools</title>
+  <meta name="description" content="Generate a comma-separated list of YouTube tags from your video topic. Stays within the 500-character limit, with a one-click Copy button. No signup.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Tube<span>Rank</span> Tools</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="tag-generator.html" aria-current="page">Tags</a>
+      <a href="title-generator.html">Titles</a>
+      <a href="description-generator.html">Descriptions</a>
+      <a href="keyword-tool.html">Keywords</a>
+      <a href="hashtag-generator.html">Hashtags</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="page-intro">
+    <h1>YouTube Tag Generator</h1>
+    <p>Type your video topic and get a ready-to-paste, comma-separated tag list. The tags are built from your own words plus common viewer phrasing like "for beginners" and "how to", and trimmed to fit YouTube's limit.</p>
+  </section>
+
+  <section class="tool-card" aria-label="Tag generator">
+    <form id="tag-form" novalidate>
+      <label for="tag-topic">Video topic or main keyword</label>
+      <input id="tag-topic" type="text" placeholder="e.g. beginner guitar lessons" autocomplete="off">
+      <label for="tag-extra">Extra keywords <span class="hint">(optional, separated by commas)</span></label>
+      <input id="tag-extra" type="text" placeholder="e.g. acoustic, chords, practice routine" autocomplete="off">
+      <p class="form-error" role="alert"></p>
+      <button class="btn" type="submit">Generate tags</button>
+    </form>
+
+    <div id="tag-result" class="result" hidden>
+      <label for="tag-output">Your tags (you can edit them)</label>
+      <textarea id="tag-output" rows="6"></textarea>
+      <p id="tag-count" class="meta" aria-live="polite"></p>
+      <button class="btn btn-outline" type="button" data-copy-target="tag-output" data-status="tag-status">Copy tags</button>
+      <span id="tag-status" class="status" role="status"></span>
+    </div>
+  </section>
+
+  <aside class="ad-slot" aria-label="Advertisement placeholder">
+    <span class="ad-label">Advertisement</span>
+    <div class="ad-box">Optional ad placeholder. Remove it, or add your ad code here later.</div>
+  </aside>
+
+  <section class="section prose">
+    <h2>How to use the tags</h2>
+    <ol>
+      <li>Enter the main subject of your video, in the words a viewer would type.</li>
+      <li>Add any extra keywords that are specific to your video.</li>
+      <li>Click <strong>Generate tags</strong>, then delete anything that doesn't describe your video.</li>
+      <li>Click <strong>Copy tags</strong> and paste them into the Tags box under "Show more" in YouTube Studio.</li>
+    </ol>
+    <p class="note">The list is kept under 450 characters so it stays safely inside YouTube's 500-character tag limit. Tags are a minor signal: your title, thumbnail and content matter more.</p>
+  </section>
+
+  <section class="section faq">
+    <h2>Tag generator FAQ</h2>
+    <details><summary>Do YouTube tags still matter?</summary><p>YouTube says tags play a small role in how videos are found. They can help when viewers commonly misspell a word, but your title, thumbnail and description are more important.</p></details>
+    <details><summary>How many characters can tags use?</summary><p>YouTube allows up to 500 characters in total across all tags for a video.</p></details>
+    <details><summary>Are these tags based on real search data?</summary><p>No. They are built from your input and common phrasing patterns. This tool does not show search volume or ranking predictions.</p></details>
+    <details><summary>Should I use every tag the tool suggests?</summary><p>No. Keep only the tags that honestly describe your video. Misleading tags can violate YouTube's policies.</p></details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year">2026</span> TubeRank Tools. Independent project, not affiliated with YouTube or Google.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

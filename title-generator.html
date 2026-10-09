@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Title Generator &ndash; Editable Video Title Ideas | TubeRank Tools</title>
+  <meta name="description" content="Get editable YouTube title ideas from your topic. Tweak each one, see the character count, and copy your favorite. Free, no signup, runs in your browser.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Tube<span>Rank</span> Tools</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="tag-generator.html">Tags</a>
+      <a href="title-generator.html" aria-current="page">Titles</a>
+      <a href="description-generator.html">Descriptions</a>
+      <a href="keyword-tool.html">Keywords</a>
+      <a href="hashtag-generator.html">Hashtags</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="page-intro">
+    <h1>YouTube Title Generator</h1>
+    <p>Enter your video topic to see a list of title ideas built from proven structures like guides, lists and beginner-friendly explainers. Every suggestion is an editable text box, so you can rewrite it in your own voice before copying.</p>
+  </section>
+
+  <section class="tool-card" aria-label="Title generator">
+    <form id="title-form" novalidate>
+      <label for="title-topic">Video topic</label>
+      <input id="title-topic" type="text" placeholder="e.g. home workouts" autocomplete="off">
+      <label for="title-audience">Target viewer <span class="hint">(optional)</span></label>
+      <input id="title-audience" type="text" placeholder="e.g. beginners, busy parents" autocomplete="off">
+      <label for="title-number">Number for list titles <span class="hint">(optional, leave empty to skip list titles)</span></label>
+      <input id="title-number" type="number" min="1" max="99" value="5">
+      <p class="form-error" role="alert"></p>
+      <button class="btn" type="submit">Generate titles</button>
+    </form>
+
+    <div id="title-result" class="result" hidden>
+      <h2>Your title ideas</h2>
+      <p class="meta">Click into any title to edit it. Titles over about 60 characters may be shortened in search results.</p>
+      <ul id="title-list" class="title-list"></ul>
+    </div>
+  </section>
+
+  <aside class="ad-slot" aria-label="Advertisement placeholder">
+    <span class="ad-label">Advertisement</span>
+    <div class="ad-box">Optional ad placeholder. Remove it, or add your ad code here later.</div>
+  </aside>
+
+  <section class="section prose">
+    <h2>Tips for choosing a good title</h2>
+    <ul>
+      <li><strong>Be honest.</strong> The title should match what the video delivers. Misleading titles hurt viewer trust.</li>
+      <li><strong>Lead with the keyword.</strong> Put the words a viewer would search for near the start.</li>
+      <li><strong>Add a reason to click.</strong> A benefit, a number or a clear outcome helps.</li>
+      <li><strong>Match your thumbnail.</strong> The title and thumbnail should work together, not repeat each other.</li>
+    </ul>
+  </section>
+
+  <section class="section faq">
+    <h2>Title generator FAQ</h2>
+    <details><summary>How long can a YouTube title be?</summary><p>YouTube allows up to 100 characters, but long titles are often cut off in search and on mobile, so many creators aim for roughly 60 characters or fewer.</p></details>
+    <details><summary>Are the titles written by AI?</summary><p>No. They come from fixed templates filled with your words. That keeps the tool free and predictable, but it also means you should edit each title to sound natural.</p></details>
+    <details><summary>Why are some title styles missing?</summary><p>Templates that need a target viewer or a number only appear if you fill in those optional fields.</p></details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year">2026</span> TubeRank Tools. Independent project, not affiliated with YouTube or Google.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

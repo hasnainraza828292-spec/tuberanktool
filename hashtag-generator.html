@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Hashtag Generator &ndash; Valid Hashtags for Your Videos | TubeRank Tools</title>
+  <meta name="description" content="Generate clean, valid YouTube hashtags from your topic. Choose how many you need, and follow YouTube's hashtag rules. Free, private, one-click copy.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Tube<span>Rank</span> Tools</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="tag-generator.html">Tags</a>
+      <a href="title-generator.html">Titles</a>
+      <a href="description-generator.html">Descriptions</a>
+      <a href="keyword-tool.html">Keywords</a>
+      <a href="hashtag-generator.html" aria-current="page">Hashtags</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="page-intro">
+    <h1>YouTube Hashtag Generator</h1>
+    <p>Hashtags are clickable labels that group videos by theme. Enter your topic and get properly formatted hashtags with no spaces or special characters, ready to paste into your title or description.</p>
+  </section>
+
+  <section class="tool-card" aria-label="Hashtag generator">
+    <form id="hash-form" novalidate>
+      <label for="hash-topic">Video topic</label>
+      <input id="hash-topic" type="text" placeholder="e.g. vegan baking" autocomplete="off">
+      <label for="hash-extra">Extra words <span class="hint">(optional, separated by commas)</span></label>
+      <input id="hash-extra" type="text" placeholder="e.g. desserts, easy recipes" autocomplete="off">
+      <label for="hash-count">How many hashtags?</label>
+      <select id="hash-count">
+        <option value="3">3</option>
+        <option value="5" selected>5</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="15">15 (maximum)</option>
+      </select>
+      <p class="form-error" role="alert"></p>
+      <button class="btn" type="submit">Generate hashtags</button>
+    </form>
+
+    <div id="hash-result" class="result" hidden>
+      <label for="hash-output">Your hashtags (you can edit them)</label>
+      <textarea id="hash-output" rows="3"></textarea>
+      <p id="hash-note" class="meta" aria-live="polite"></p>
+      <button class="btn btn-outline" type="button" data-copy-target="hash-output" data-status="hash-status">Copy hashtags</button>
+      <span id="hash-status" class="status" role="status"></span>
+    </div>
+  </section>
+
+  <aside class="ad-slot" aria-label="Advertisement placeholder">
+    <span class="ad-label">Advertisement</span>
+    <div class="ad-box">Optional ad placeholder. Remove it, or add your ad code here later.</div>
+  </aside>
+
+  <section class="section prose">
+    <h2>YouTube hashtag rules to remember</h2>
+    <ul>
+      <li>Hashtags must start with # and contain no spaces.</li>
+      <li>YouTube shows up to <strong>3</strong> hashtags above your video title.</li>
+      <li>If a video has more than <strong>15</strong> hashtags, YouTube ignores all of them.</li>
+      <li>Only use hashtags that truly relate to your video.</li>
+    </ul>
+  </section>
+
+  <section class="section faq">
+    <h2>Hashtag generator FAQ</h2>
+    <details><summary>Where do I put hashtags?</summary><p>In your video description or title. Hashtags in the description appear above the title (the first three).</p></details>
+    <details><summary>Are hashtags the same as tags?</summary><p>No. Tags are hidden metadata in YouTube Studio. Hashtags are visible, clickable labels.</p></details>
+    <details><summary>Will hashtags increase my views?</summary><p>No tool can guarantee that. Relevant hashtags can help viewers find related videos, but they are a small piece of the picture.</p></details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year">2026</span> TubeRank Tools. Independent project, not affiliated with YouTube or Google.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

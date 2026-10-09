@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Keyword Idea Generator &ndash; Brainstorm Video Topics | TubeRank Tools</title>
+  <meta name="description" content="Brainstorm YouTube keyword ideas from one seed phrase: questions, angles and comparisons, each with a quick link to check it on YouTube. No fake search volumes.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Tube<span>Rank</span> Tools</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">&#9776;</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="tag-generator.html">Tags</a>
+      <a href="title-generator.html">Titles</a>
+      <a href="description-generator.html">Descriptions</a>
+      <a href="keyword-tool.html" aria-current="page">Keywords</a>
+      <a href="hashtag-generator.html">Hashtags</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="page-intro">
+    <h1>YouTube Keyword Idea Generator</h1>
+    <p>Start with one seed phrase and get dozens of video-topic ideas grouped by type. This is a brainstorming helper: it does <strong>not</strong> show search volume or competition. To see what real viewers search for, use the "Check" link beside each idea to open it on YouTube.</p>
+  </section>
+
+  <section class="tool-card" aria-label="Keyword idea generator">
+    <form id="kw-form" novalidate>
+      <label for="kw-seed">Seed keyword</label>
+      <input id="kw-seed" type="text" placeholder="e.g. meal prep" autocomplete="off">
+      <p class="form-error" role="alert"></p>
+      <button class="btn" type="submit">Get keyword ideas</button>
+    </form>
+
+    <div id="kw-result" class="result" hidden>
+      <div id="kw-groups"></div>
+      <textarea id="kw-all" hidden></textarea>
+      <button class="btn btn-outline" type="button" data-copy-target="kw-all" data-status="kw-status">Copy all ideas</button>
+      <span id="kw-status" class="status" role="status"></span>
+    </div>
+  </section>
+
+  <aside class="ad-slot" aria-label="Advertisement placeholder">
+    <span class="ad-label">Advertisement</span>
+    <div class="ad-box">Optional ad placeholder. Remove it, or add your ad code here later.</div>
+  </aside>
+
+  <section class="section prose">
+    <h2>How to find the best ideas from this list</h2>
+    <ol>
+      <li>Click <strong>Check</strong> beside an idea. YouTube will show the results and its own search suggestions.</li>
+      <li>Look at the top videos. Are they recent? Do they answer the question well? Could you explain it better or more simply?</li>
+      <li>Choose ideas where you can add something genuinely useful, then use them in your title, description and tags.</li>
+    </ol>
+    <p>The "alphabet prompts" are a manual trick: type your phrase followed by a letter into the YouTube search box and see what it auto-suggests. Those suggestions come from real searches.</p>
+  </section>
+
+  <section class="section faq">
+    <h2>Keyword tool FAQ</h2>
+    <details><summary>Why no search volume numbers?</summary><p>Reliable volume data comes from paid sources. Showing invented numbers would be misleading, so this free tool leaves them out.</p></details>
+    <details><summary>Are all these phrases real searches?</summary><p>Not necessarily. They are phrasing patterns that often match how people search. Use the Check link to see what YouTube actually returns.</p></details>
+    <details><summary>Can I use these as video topics?</summary><p>Yes, as long as you can make a genuinely helpful video about them.</p></details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year">2026</span> TubeRank Tools. Independent project, not affiliated with YouTube or Google.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
